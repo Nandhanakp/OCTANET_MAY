@@ -3,82 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MelodyMingle - Where Beat finds you</title>
+    <title>To-Do List</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="container">
-        
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Trending</a></li>
-                    <li><a href="#">Collections</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
+    
+    <div class="container">
+        <h1>To-Do List</h1>
+        <div class="task-entry">
+            <input type="text" id="task-input" placeholder="Enter new task">
+            <div class="selectors">
+                <select id="category-select">
+                    <option value="work">Work</option>
+                    <option value="personal">Personal</option>
+                    <option value="other">Other</option>
+                </select>
+                <input type="date" id="due-date">
+                <select id="priority-select">
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
             </div>
-        </nav>
-    </header>
-
-    <section class="hero">
-        <div class="container">
-            <h1>MELODYMINGLE</h1>
-            <h2>Where Beat finds you</h2>
-            <p>Welcome to our melody haven, where we pride ourselves on orchestrating the perfect symphony for your musical journey.</br>Whether you're yearning for soulful tunes to uplift your spirits or energetic beats to ignite your passion, we've got you covered.</br> Dive into our harmonious universe and let the rhythm guide your wanderlust through the vibrant tapestry of sound.</p>
+            <button id="add-task-button">Add Task</button>
         </div>
-    </section>
+        <ul id="task-list"></ul>
+    </div>
 
-    <section class="best-beat">
-        <div class="container">
-            <h3>Best Beat for You</h3>
-            <p>Our team of experts has curated a melody collection of handpicked tunes and insider tips to ensure your musical journey is extraordinary.</p>
-            <a href="#" class="explore-btn">Explore</a>
-        </div>
-    </section>
-
-    <section class="trending">
-        <div class="container">
-            <h2>Trending</h2>
-            <div class="music-grid">
-                <div class="music-item">
-                    <img src="trending1.jpg" alt="Trending 1">
-                    <h4>Soulful Rhythms</h4>
-                    <a href="#" class="see-more">See More</a>
-                </div>
-                <div class="music-item">
-                    <img src="trending2.jpg" alt="Trending 2">
-                    <h4>Energetic Beats</h4>
-                    <a href="#" class="see-more">See More</a>
-                </div>
-                <div class="music-item">
-                    <img src="trending3.jpg" alt="Trending 3">
-                    <h4>Chill Vibes</h4>
-                    <a href="#" class="see-more">See More</a>
-                </div>
-                <div class="music-item">
-                    <img src="trending4.jpg" alt="Trending 3">
-                    <h4>90's Love Hits</h4>
-                    <a href="#" class="see-more">See More</a>
-                </div>
-                <div class="music-item">
-                    <img src="trending5.jpg" alt="Trending 3">
-                    <h4>Moody Mix</h4>
-                    <a href="#" class="see-more">See More</a>
-                </div>
-                <div class="music-item">
-                    <img src="trending6.jpg" alt="Trending 3">
-                    <h4>Mollywood Gold</h4>
-                    <a href="#" class="see-more">See More</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 MelodyMingle</p>
-        </div>
-    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
